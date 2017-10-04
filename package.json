@@ -1,0 +1,32 @@
+{
+    "name": "mcjson",
+    "version": "0.0.1",
+    "publisher": "Levertion",
+    "engines": {
+        "vscode": "^0.16.0"
+    },
+    "license": "SEE LICENSE IN LICENSE",
+    "displayName": "Minecraft JSON Schemas",
+    "description": "An extension to bring support for Minecraft JSON schemas",
+    "categories": [
+        "Linters",
+        "Other"
+    ],
+    "keywords": [
+        "minecraft",
+        "json",
+        "schema"
+    ],
+    "contributes": {
+        "jsonValidation": [
+            {
+                "fileMatch": "*/advancements/*/*.json",
+                "url": "./minecraft-json-schemas/advancement-strict.json"
+            },
+            {
+                "fileMatch": "pack.mcmeta",
+                "url": "./minecraft-json-schemas/pack.mcmeta.json"
+            }
+        ]
+    }
+}

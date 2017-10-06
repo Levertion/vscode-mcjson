@@ -8,7 +8,7 @@ import * as vscode from 'vscode';
 export function activate(context: vscode.ExtensionContext) {
     let config = vscode.workspace.getConfiguration()
     if (config.get("files.associations")["*.mcmeta"] == undefined && !context.globalState.get("mcmeta- updated")) {
-        let object = config.get("files.associations");
+        let object = config.inspect("files.associations").globalValue;
         object["*.mcmeta"] = "json";
         config.update("files.associations", object, true);
         vscode.window.showInformationMessage("In order for the vscode-mcjson extension to support mcmeta files, it has had to update the `files.association` setting in user settings");

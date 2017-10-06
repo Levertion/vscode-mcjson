@@ -7,7 +7,7 @@
     },
     "license": "SEE LICENSE IN LICENSE",
     "displayName": "Minecraft JSON Schemas",
-    "description": "An extension to bring support for Minecraft JSON schemas",
+    "description": "An extension to bring support for Minecraft JSON schemas into Visual Studio Code",
     "categories": [
         "Linters",
         "Other"
@@ -17,6 +17,10 @@
         "json",
         "schema"
     ],
+    "activationEvents": [
+        "onLanguage:mcmeta"
+    ],
+    "main": "./out/src/extension",
     "contributes": {
         "jsonValidation": [
             {
@@ -28,5 +32,32 @@
                 "url": "./minecraft-json-schemas/pack.mcmeta.json"
             }
         ]
+    },
+    "bugs": {
+        "url": "https://github.com/Levertion/vscode-mcjson/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Levertion/vscode-mcjson.git"
+    },
+    "homepage": "https://levertion.github.io",
+    "galleryBanner": {
+        "theme": "dark",
+        "color": "#007C00"
+    },
+    "icon": "./icon.png",
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.5.2",
+        "vscode": "^1.1.5",
+        "mocha": "^3.5.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
     }
 }

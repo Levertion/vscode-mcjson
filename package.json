@@ -5,7 +5,7 @@
     "engines": {
         "vscode": "^0.16.0"
     },
-    "license": "SEE LICENSE IN LICENSE",
+    "license": "MIT",
     "displayName": "Minecraft JSON Schemas",
     "description": "An extension to bring support for Minecraft JSON schemas into Visual Studio Code",
     "categories": [
@@ -18,7 +18,7 @@
         "schema"
     ],
     "activationEvents": [
-        "onLanguage:mcmeta"
+        "*"
     ],
     "main": "./out/src/extension",
     "contributes": {
@@ -30,6 +30,10 @@
             {
                 "fileMatch": "pack.mcmeta",
                 "url": "./minecraft-json-schemas/pack.mcmeta.json"
+            },
+            {
+                "fileMatch": "*.png.mcmeta",
+                "url": "./minecraft-json-schemas/animation.mcmeta.json"
             }
         ]
     },
@@ -50,8 +54,7 @@
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+        "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
         "typescript": "^2.5.2",

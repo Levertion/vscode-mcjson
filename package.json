@@ -18,7 +18,7 @@
         "schema"
     ],
     "activationEvents": [
-        "*"
+        "workspaceContains:*.mcmeta"
     ],
     "main": "./out/src/extension",
     "contributes": {
@@ -38,6 +38,10 @@
             {
                 "fileMatch": "*.png.mcmeta",
                 "url": "./minecraft-json-schemas/animation.mcmeta.json"
+            },
+            {
+                "fileMatch": "sounds.json",
+                "url": "./minecraft-json-schemas/sounds.json"
             }
         ]
     },

@@ -24,12 +24,16 @@
     "contributes": {
         "jsonValidation": [
             {
-                "fileMatch": "*/advancements/*/*.json",
-                "url": "./minecraft-json-schemas/advancement-strict.json"
+                "fileMatch": "**/advancements/**/*.json",
+                "url": "./minecraft-json-schemas/advancement_strict.json"
             },
             {
                 "fileMatch": "pack.mcmeta",
                 "url": "./minecraft-json-schemas/pack.mcmeta.json"
+            },
+            {
+                "fileMatch": "**/loot_tables/**/*.json",
+                "url": "./minecraft-json-schemas/loot_table_strict.json"
             },
             {
                 "fileMatch": "*.png.mcmeta",

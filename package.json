@@ -1,6 +1,6 @@
 {
     "name": "mcjson",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "Levertion",
     "engines": {
         "vscode": "^0.16.0"
@@ -57,7 +57,7 @@
         "theme": "dark",
         "color": "#007C00"
     },
-    "icon": "./icon.png",
+    "icon": "icon.png",
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",

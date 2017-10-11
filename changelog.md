@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
  - model files
  - blockstate files
 
-## v0.1.0
+## v0.1.0 - 2017-10-10
 - Initial release
 ### Added
  - advancement support
@@ -16,3 +16,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
  - `pack.mcmeta` support
  - `sounds.json` support
  - other `.mcmeta` file support
+
+ [Unreleased]: https://github.com/Levertion/vscode-mcjson/compare/v0.1.0...HEAD

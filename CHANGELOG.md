@@ -8,8 +8,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html)
 
 ## [Unreleased]
+
+## v0.1.1 - 2017-10-12
+ - Bugfix update
+ - Update to official 0.1.1 version of 'minecraft-json-schemas'
 ### Fixed
- - Enchantments not being an array
+ - Incorrect references to json_component in shared definition
+ - Only allows functions and conditions with a `minecraft:` namespace in loot tables, as even the vanilla loot tables don't use it
+ - Property not defined error
 
 ## v0.1.0 - 2017-10-10
  - Initial release

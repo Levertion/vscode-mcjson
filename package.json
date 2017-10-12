@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "publisher": "Levertion",
     "engines": {
-        "vscode": "^0.16.0"
+        "vscode": "^1.16.0"
     },
     "license": "MIT",
     "displayName": "Minecraft JSON Schemas",

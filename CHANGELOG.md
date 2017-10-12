@@ -9,7 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## v0.1.1 - 2017-10-12
+## [v0.1.2] - 2017-10-12
+ - Bugfix update
+### Fixed
+ - `mcmeta` association possibly not working due to missing `;` in Javascript
+
+## [v0.1.1] - 2017-10-12
  - Bugfix update
  - Update to official 0.1.1 version of 'minecraft-json-schemas'
 ### Fixed
@@ -27,4 +32,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
  - `sounds.json` support
  - other `.mcmeta` file support
 
- [Unreleased]: https://github.com/Levertion/vscode-mcjson/compare/v0.1.0...HEAD
+ [Unreleased]: https://github.com/Levertion/vscode-mcjson/compare/v0.1.1...HEAD
+ [v0.1.2]: https://github.com/Levertion/vscode-mcjson/compare/v0.1.1...v0.1.2
+ [v0.1.1]: https://github.com/Levertion/vscode-mcjson/compare/v0.1.0...v0.1.1
+ 
+ 

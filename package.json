@@ -42,6 +42,10 @@
             {
                 "fileMatch": "sounds.json",
                 "url": "./minecraft-json-schemas/sounds.json"
+            },
+            {
+                "fileMatch": "**/blockstates/**.json",
+                "url": "./minecraft-json-schemas/blockstates.json"
             }
         ]
     },

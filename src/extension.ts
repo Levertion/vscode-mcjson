@@ -12,8 +12,8 @@ export function activate(context: vscode.ExtensionContext) {
         object["*.mcmeta"] = "json";
         config.update("files.associations", object, true);
         vscode.window.showInformationMessage("In order for the vscode-mcjson extension to support mcmeta files, it has had to update the `files.association` setting in user settings to make mcmeta files use JSON");
+        context.globalState.update("mcmeta-updated", true);
     }
-    context.globalState.update("mcmeta-updated", true);
 }
 
 // this method is called when your extension is deactivated

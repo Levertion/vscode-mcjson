@@ -1,78 +1,79 @@
 {
-    "name": "mcjson",
-    "version": "0.3.0",
-    "publisher": "Levertion",
-    "engines": {
-        "vscode": "^1.16.0"
-    },
-    "license": "MIT",
-    "displayName": "Minecraft JSON Schemas",
-    "description": "An extension to bring support for Minecraft JSON schemas into Visual Studio Code",
-    "categories": [
-        "Linters",
-        "Other"
-    ],
-    "keywords": [
-        "minecraft",
-        "json",
-        "schema"
-    ],
-    "activationEvents": [
-        "workspaceContains:*.mcmeta"
-    ],
-    "main": "./out/src/extension",
-    "contributes": {
-        "jsonValidation": [
-            {
-                "fileMatch": "**/advancements/**/*.json",
-                "url": "./minecraft-json-schemas/advancement_strict.json"
-            },
-            {
-                "fileMatch": "pack.mcmeta",
-                "url": "./minecraft-json-schemas/pack.mcmeta.json"
-            },
-            {
-                "fileMatch": "**/loot_tables/**/*.json",
-                "url": "./minecraft-json-schemas/loot_table_strict.json"
-            },
-            {
-                "fileMatch": "*.png.mcmeta",
-                "url": "./minecraft-json-schemas/animation.mcmeta.json"
-            },
-            {
-                "fileMatch": "sounds.json",
-                "url": "./minecraft-json-schemas/sounds.json"
-            },
-            {
-                "fileMatch": "**/blockstates/**.json",
-                "url": "./minecraft-json-schemas/blockstates.json"
-            }
-        ]
-    },
-    "bugs": {
-        "url": "https://github.com/Levertion/vscode-mcjson/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Levertion/vscode-mcjson.git"
-    },
-    "homepage": "https://levertion.github.io",
-    "galleryBanner": {
-        "theme": "dark",
-        "color": "#007C00"
-    },
-    "icon": "icon.png",
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install"
-    },
-    "devDependencies": {
-        "typescript": "^2.5.2",
-        "vscode": "^1.1.5",
-        "mocha": "^3.5.0",
-        "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
-    }
+  "name": "mcjson",
+  "version": "0.3.0",
+  "publisher": "Levertion",
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "license": "MIT",
+  "displayName": "Minecraft JSON Schemas",
+  "description": "An extension to bring support for Minecraft JSON schemas into Visual Studio Code",
+  "categories": [
+    "Linters",
+    "Other"
+  ],
+  "keywords": [
+    "minecraft",
+    "json",
+    "schema"
+  ],
+  "activationEvents": [
+    "workspaceContains:*.mcmeta"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "jsonValidation": [
+      {
+        "fileMatch": "**/advancements/**/*.json",
+        "url": "./minecraft-json-schemas/advancement_strict.json"
+      },
+      {
+        "fileMatch": "pack.mcmeta",
+        "url": "./minecraft-json-schemas/pack.mcmeta.json"
+      },
+      {
+        "fileMatch": "**/loot_tables/**/*.json",
+        "url": "./minecraft-json-schemas/loot_table_strict.json"
+      },
+      {
+        "fileMatch": "*.png.mcmeta",
+        "url": "./minecraft-json-schemas/animation.mcmeta.json"
+      },
+      {
+        "fileMatch": "sounds.json",
+        "url": "./minecraft-json-schemas/sounds.json"
+      },
+      {
+        "fileMatch": "**/blockstates/**.json",
+        "url": "./minecraft-json-schemas/blockstates.json"
+      }
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/Levertion/vscode-mcjson/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Levertion/vscode-mcjson.git"
+  },
+  "homepage": "https://levertion.github.io",
+  "galleryBanner": {
+    "theme": "dark",
+    "color": "#007C00"
+  },
+  "icon": "icon.png",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "@types/node": "^7.10.0",
+    "typescript": "^2.9.2",
+    "vscode": "^1.1.21"
+  },
+  "dependencies": {
+    "minecraft-json-schemas": "git+https://github.com/Levertion/minecraft-json-schemas.git"
+  }
 }

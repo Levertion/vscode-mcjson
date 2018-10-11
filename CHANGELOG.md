@@ -8,10 +8,13 @@ However, changes specific to the extension are also mentioned here. These will b
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html)
 
-## [v0.4.0] - UNRELEASED
+## [v0.4.0] - 2018-10-11
 
 - Update to v0.4.0 of `minecraft-json-schemas`
 - 1.13 update
+- Special thanks to [Misode](https://twitter.com/misoloo) for their hard work
+  creating this update in
+  [#3](https://github.com/Levertion/minecraft-json-schemas/pull/3)
 
 ## Added
 

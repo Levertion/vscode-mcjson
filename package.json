@@ -1,6 +1,6 @@
 {
   "name": "mcjson",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "publisher": "Levertion",
   "engines": {
     "vscode": "^1.28.0"

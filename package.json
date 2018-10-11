@@ -24,28 +24,36 @@
   "contributes": {
     "jsonValidation": [
       {
-        "fileMatch": "**/advancements/**/*.json",
-        "url": "./minecraft-json-schemas/advancement_strict.json"
-      },
-      {
-        "fileMatch": "pack.mcmeta",
-        "url": "./minecraft-json-schemas/pack.mcmeta.json"
-      },
-      {
-        "fileMatch": "**/loot_tables/**/*.json",
-        "url": "./minecraft-json-schemas/loot_table_strict.json"
-      },
-      {
         "fileMatch": "*.png.mcmeta",
-        "url": "./minecraft-json-schemas/animation.mcmeta.json"
-      },
-      {
-        "fileMatch": "sounds.json",
-        "url": "./minecraft-json-schemas/sounds.json"
+        "url": "./node_modules/minecraft-json-schemas/java/data/animation.mcmeta.json"
       },
       {
         "fileMatch": "**/blockstates/**.json",
-        "url": "./minecraft-json-schemas/blockstates.json"
+        "url": "./node_modules/minecraft-json-schemas/java/assets/blockstates.json"
+      },
+      {
+        "fileMatch": "sounds.json",
+        "url": "./node_modules/minecraft-json-schemas/java/assets/sounds.json"
+      },
+      {
+        "fileMatch": "**/advancements/**/*.json",
+        "url": "./node_modules/minecraft-json-schemas/java/data/advancement.json"
+      },
+      {
+        "fileMatch": "**/loot_tables/**/*.json",
+        "url": "./node_modules/minecraft-json-schemas/java/data/loot_table.json"
+      },
+      {
+        "fileMatch": "datapacks/*/pack.mcmeta",
+        "url": "./node_modules/minecraft-json-schemas/java/data/pack.mcmeta.json"
+      },
+      {
+        "fileMatch": "resourepacks/*/pack.mcmeta",
+        "url": "./node_modules/minecraft-json-schemas/java/assets/pack.mcmeta.json"
+      },
+      {
+        "fileMatch": "**/*[!k][!s]/*/pack.mcmeta",
+        "url": "./node_modules/minecraft-json-schemas/java/pack.mcmeta_either.json"
       }
     ]
   },

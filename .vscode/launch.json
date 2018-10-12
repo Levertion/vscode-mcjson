@@ -6,12 +6,8 @@
             "request": "launch",
             "name": "Launch Extension",
             "runtimeExecutable": "${execPath}",
-            "args": [
-                "--extensionDevelopmentPath=${workspaceRoot}"
-            ],
-            "outFiles": [
-                "${workspaceRoot}/out/**/*.js"
-            ]
+            "args": ["--extensionDevelopmentPath=${workspaceRoot}"],
+            "outFiles": ["${workspaceRoot}/out/**/*.js"]
         }
     ]
 }
